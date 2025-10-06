@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--espacamento-container);
+}
+
+/* 1. DEFINIÇÃO DAS VARIÁVEIS PARA TAMANHOS (Mobile First) */
+:root {
+    /* Variáveis de Tamanho de Fonte */
+    --fonte-h1: 2.2rem;
+    --fonte-h2: 1.7rem;
+    --fonte-p: 1rem;
+
+    /* Variáveis de Espaçamento */
+    --espacamento-vertical: 1.5rem;
+    --espacamento-container: 1rem;
+}
+
+/* 2. APLICAÇÃO DAS VARIÁVEIS NOS ELEMENTOS     */
+h1 {
+    font-size: var(--fonte-h1);
+    margin-bottom: var(--espacamento-vertical);
+}
+
+h2 {
+    font-size: var(--fonte-h2);
+    margin-top: var(--espacamento-vertical);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: var(--fonte-p);
+    text-align: justify; /* MODIFICAÇÃO AQUI */
+}
+
+section {
+    margin-bottom: var(--espacamento-vertical);
+}
+
+footer p {
+    text-align: center; 
+}
+
+/* 3. MODIFICAÇÃO DAS VARIÁVEIS PARA DIFERENTES TAMANHOS DE TELA */
+
+/* Estilos para telas médias (tablets) - a partir de 768px */
+@media (min-width: 768px) {
+    :root {
+        --fonte-h1: 2.8rem;
+        --fonte-h2: 2.1rem;
+        --fonte-p: 1.1rem;
+        --espacamento-vertical: 2rem;
+        --espacamento-container: 2rem;
+    }
+}
+
+/* Estilos para telas grandes (desktops) - a partir de 1024px */
+@media (min-width: 1024px) {
+    :root {
+        --fonte-h1: 3.5rem;
+        --fonte-h2: 2.5rem;
+        --espacamento-vertical: 2.5rem;
+        --espacamento-container: 3rem;
+    }
+}

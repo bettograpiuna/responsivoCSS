@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo com Variáveis CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Layout Responsivo com Variáveis</h1>
+            <p>O uso de Variáveis CSS (Custom Properties) para criar layouts responsivos é uma abordagem moderna e poderosa que centraliza as regras de design e simplifica a manutenção do código. A técnica consiste em definir propriedades reutilizáveis, como tamanhos de fonte (--fonte-titulo), espaçamentos (--espacamento-geral) ou cores, no seletor :root. Em vez de reescrever múltiplas regras para diferentes elementos dentro de cada @media query, o desenvolvedor apenas redefine o valor dessas variáveis para cada breakpoint. Com isso, qualquer elemento que utilize uma variável é atualizado automaticamente, resultando em um CSS mais limpo, organizado e escalável, que evita a repetição de código e torna o processo de ajuste para diferentes telas muito mais eficiente.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Custom Properties</h2>
+                <p>As Propriedades Customizadas (Custom Properties), popularmente conhecidas como Variáveis CSS, são entidades definidas por desenvolvedores para armazenar valores específicos que podem ser reutilizados em toda a folha de estilos. Declaradas com um prefixo de hífen duplo (ex: --cor-principal: #3498db) e acessadas através da função var(), elas respeitam as regras da cascata e da herança do CSS. O seu poder reside na capacidade de centralizar valores, como cores, tamanhos de fonte ou espaçamentos, de modo que uma única alteração na variável se propaga para todas as instâncias onde ela é usada. Isso não só torna o código mais limpo e de fácil manutenção, seguindo o princípio D.R.Y. (Don't Repeat Yourself), mas também permite a manipulação dinâmica de estilos via JavaScript, sendo fundamental para a implementação de funcionalidades modernas como temas (modo claro/escuro) e a criação de sistemas de design escaláveis e consistentes.</p>
+            </section>
+            
+            <section>
+                <h2>@Media Query</h2>
+                <p>A regra @media (ou media query) é um recurso fundamental do CSS3 que permite aplicar blocos de estilos de forma condicional, com base nas características do dispositivo ou da janela do navegador em que o site está sendo visualizado. Através de parâmetros como largura (width), altura (height) e orientação (orientation), os desenvolvedores podem criar "breakpoints" — pontos de interrupção específicos onde o layout se adapta para oferecer a melhor experiência possível. Essencialmente, as media queries são o pilar do design responsivo, permitindo que uma única base de código HTML se transforme e se ajuste para se adequar perfeitamente a uma vasta gama de aparelhos, desde grandes monitores de desktop até as pequenas telas de smartphones, garantindo a usabilidade e a legibilidade do conteúdo em qualquer contexto.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 - Projeto Exemplo</p>
+        </footer>
+    </div>
+
+</body>
+</html>

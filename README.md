@@ -1,6 +1,6 @@
 # Layout Responsivo com Variáveis CSS
 
-![Status](https://img.shields.io/badge/status-concluído-brightgreen)
+[![Visualizar Projeto](https://img.shields.io/badge/Visualizar_Projeto-blue?style=plastic&logo=github)](https://bettograpiuna.github.io/responsivoCSS/)
 
 > Este projeto é uma demonstração prática de como utilizar técnicas modernas de CSS para criar um layout web responsivo e de fácil manutenção. O foco principal é o uso de **Variáveis CSS (Custom Properties)** para gerenciar dinamicamente tamanhos de fontes e espaçamentos em diferentes resoluções de tela.
 
